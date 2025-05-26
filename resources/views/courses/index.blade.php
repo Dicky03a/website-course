@@ -6,35 +6,35 @@
     <ul class="flex w-full max-w-[1280px] px-[75px] mx-auto gap-3">
         <li class="group">
             <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
                 <img src="{{ asset('assets/images/icons/home-trend-up.svg') }}" class="flex shrink-0 w-5" alt="icon">
                 <span>Overview</span>
             </a>
         </li>
         <li class="group active">
             <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
                 <img src="{{ asset('assets/images/icons/note-favorite.svg') }}" class="flex shrink-0 w-5" alt="icon">
-                <span>Courses</span>
+                <span class="text-white">Courses</span>
             </a>
         </li>
         <li class="group">
             <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
                 <img src="{{ asset('assets/images/icons/message-programming.svg') }}" class="flex shrink-0 w-5" alt="icon">
                 <span>Quizzess</span>
             </a>
         </li>
         <li class="group">
             <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
                 <img src="{{ asset('assets/images/icons/cup.svg') }}" class="flex shrink-0 w-5" alt="icon">
                 <span>Certificates</span>
             </a>
         </li>
         <li class="group">
             <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
                 <img src="{{ asset('assets/images/icons/ruler&pen.svg') }}" class="flex shrink-0 w-5" alt="icon">
                 <span>Portfolios</span>
             </a>
@@ -49,7 +49,7 @@
         @foreach ($coursesByCategory as $category => $courses)
         <button type="button" class="tab-btn group {{ $loop->first ? 'active' : '' }}"
             data-target="{{ Str::slug($category) }}-content">
-            <p class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-black">
+            <p class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green-500 bg-obito-green-500 transition-all duration-300 group-[.active]:bg-obito-black">
                 <span class="group-[.active]:font-semibold group-[.active]:text-white">
                     {{ $category }}
                 </span>

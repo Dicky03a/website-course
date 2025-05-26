@@ -7,10 +7,17 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
+Route::get('/about', [FrontController::class, 'about'])->name('front.about');
+Route::get('/prestasi', [FrontController::class, 'gallery'])->name('front.prestasi');
 Route::get('/pricing', [FrontController::class, 'pricing'])->name('front.pricing');
+Route::get('/blog', [FrontController::class, 'blog'])->name('front.blog');
+Route::get('/ketua', [FrontController::class, 'ketua'])->name('front.ketua');
 
-Route::match(['get', 'post'], '/booking/payment/midtrans/notification',
-[FrontController::class, 'paymentMidtransNotification'])
+Route::match(
+    ['get', 'post'],
+    '/booking/payment/midtrans/notification',
+    [FrontController::class, 'paymentMidtransNotification']
+)
     ->name('front.payment_midtrans_notification');
 
 Route::middleware('auth')->group(function () {
@@ -20,45 +27,43 @@ Route::middleware('auth')->group(function () {
 
     Route::middleware('role:student')->group(function () {
         Route::get('/dashboard/subscriptions/', [DashboardController::class, 'subscriptions'])
-        ->name('dashboard.subscriptions');
+            ->name('dashboard.subscriptions');
 
         // model binding 1, 23, 412 ,2121
         Route::get('/dashboard/subscription/{transaction}', [DashboardController::class, 'subscription_details'])
-        ->name('dashboard.subscription.details');
+            ->name('dashboard.subscription.details');
 
         Route::get('/dashboard/courses/', [CourseController::class, 'index'])
-        ->name('dashboard');
+            ->name('dashboard');
 
         // slug web-design
         Route::get('/dashboard/course/{course:slug}', [CourseController::class, 'details'])
-        ->name('dashboard.course.details');
+            ->name('dashboard.course.details');
 
         Route::get('/dashboard/search/courses', [CourseController::class, 'search_courses'])
-        ->name('dashboard.search.courses');
+            ->name('dashboard.search.courses');
 
         Route::middleware(['check.subscription'])->group(function () {
             Route::get('/dashboard/join/{course:slug}', [CourseController::class, 'join'])
-            ->name('dashboard.course.join');
+                ->name('dashboard.course.join');
 
             // web-design-hack/1/12
             Route::get('/dashboard/learning/{course:slug}/{courseSection}/{sectionContent}', [CourseController::class, 'learning'])
-            ->name('dashboard.course.learning');
+                ->name('dashboard.course.learning');
 
             Route::get('/dashboard/learning/{course:slug}/finished', [CourseController::class, 'learning_finished'])
-            ->name('dashboard.course.learning.finished');
+                ->name('dashboard.course.learning.finished');
         });
 
         Route::get('/checkout/success', [FrontController::class, 'checkout_success'])
-        ->name('front.checkout.success');
+            ->name('front.checkout.success');
 
         Route::get('/checkout/{pricing}', [FrontController::class, 'checkout'])
-        ->name('front.checkout');
+            ->name('front.checkout');
 
         Route::post('/booking/payment/midtrans', [FrontController::class, 'paymentStoreMidtrans'])
-        ->name('front.payment_store_midtrans');
+            ->name('front.payment_store_midtrans');
     });
-
-
 });
 
-require __DIR__.'/auth.php';
+require __DIR__ . '/auth.php';

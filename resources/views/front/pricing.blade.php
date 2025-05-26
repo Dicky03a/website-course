@@ -3,8 +3,8 @@
 
 @section('content')
 <x-nav-guest />
-<main class="flex flex-col flex-1 justify-center">
-    <section id="pricing" class="flex flex-col items-center gap-[33px] mt-[50px]">
+<main class="flex mt-20 flex-col flex-1 justify-center">
+    <section id="pricing" class="flex flex-col items-center gap-[33px]">
         <div class="flex flex-col items-center gap-[10px] max-w-[500px] w-full">
             <p class="flex items-center gap-[6px] w-fit rounded-full py-2 px-[14px] bg-obito-light-green">
                 <img src="{{ asset('assets/images/icons/crown-green.svg') }}" class="flex shrink-0 w-5" alt="icon">
@@ -15,7 +15,7 @@
                 namun mentor tetap memberikan kualitas standard internasional</p>
         </div>
         <div class="flex items-center gap-5">
-            <div
+            <!-- <div
                 class="price-card-reguler flex flex-col h-fit w-full max-w-[314px] shrink-0 rounded-[20px] p-5 border border-obito-grey gap-5 bg-white">
                 <div class="flex items-center gap-[14px]">
                     <img src="{{ asset('assets/images/icons/award-black-fill.svg') }}" class="flex w-[60px] shrink-0" alt="icon">
@@ -40,7 +40,7 @@
                 <a class="w-full h-11 rounded-full pt-[10px] px-5 gap-[10px] bg-obito-grey text-center">
                     <span class="font-semibold text-obito-text-grey">Sold Out</span>
                 </a>
-            </div>
+            </div> -->
             @foreach($pricing_packages as $package)
             <div
                 class="price-card-popular flex flex-col h-fit w-full max-w-[314px] shrink-0 rounded-[20px] border-2 border-obito-green gap-5 bg-white overflow-hidden">
@@ -86,7 +86,7 @@
             </div>
             @endforeach
 
-            <div
+            <!-- <div
                 class="price-card-reguler flex flex-col h-fit w-full max-w-[314px] shrink-0 rounded-[20px] p-5 border border-obito-grey gap-5 bg-white">
                 <div class="flex items-center gap-[14px]">
                     <img src="{{ asset('assets/images/icons/buildings-green-fill.svg') }}" class="flex w-[60px] shrink-0"
@@ -106,279 +106,7 @@
                     class="w-full h-11 rounded-full pt-[10px] px-5 gap-[10px] bg-white text-center border border-obito-grey hover:border-obito-green transition-all duration-300">
                     <span class="font-semibold">Contact Sales</span>
                 </a>
-            </div>
-        </div>
-    </section>
-    <section id="testimonials" class="mt-[50px] w-full pb-[66px]">
-        <div id="testimonial-slide" class="w-full flex flex-nowrap overflow-x-hidden">
-            <div class="slide-container flex gap-5 pl-5 flex-nowrap animate-[slide_50s_linear_infinite]">
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/anggaphoto.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/anggaphoto.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-container flex gap-5 pl-5 flex-nowrap animate-[slide_50s_linear_infinite]">
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/anggaphoto.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/anggaphoto.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/sami.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="testimonial-card flex flex-col w-[359px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                    <div class="flex">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                        <img src="{{ asset('assets/images/icons/Star 1.svg') }}" class="flex shrink-0 w-5" alt="star">
-                    </div>
-                    <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                        saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                    <div class="flex items-center gap-3">
-                        <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden bg-obito-grey">
-                            <img src="{{ asset('assets/images/photos/3rdPerson.png') }}" class="w-full h-full object-cover"
-                                alt="photo profile">
-                        </div>
-                        <div>
-                            <p class="font-semibold">Angga Risky</p>
-                            <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </section>
 </main>

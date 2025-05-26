@@ -32,6 +32,26 @@ class FrontController extends Controller
         return view('front.index');
     }
 
+    public function about()
+    {
+        return view('front.about');
+    }
+
+    public function gallery()
+    {
+        return view('front.prestasi');
+    }
+
+    public function Blog()
+    {
+        return view('front.blog');
+    }
+
+    public function ketua()
+    {
+        return view('front.ketua');
+    }
+
     public function pricing()
     {
         $pricing_packages = $this->pricingService->getAllPackages();
