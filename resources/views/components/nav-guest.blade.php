@@ -1,4 +1,4 @@
-<nav id="nav-guest" class="flex w-full bg-white border-b border-obito-grey">
+<nav id="nav-guest" class="flex fixed z-10 w-full bg-white border-b border-obito-grey">
     <div class="flex w-full py-5 items-center justify-between mx-auto" style="padding-left:70px; padding-right:70px;">
         <div class="flex items-center gap-[50px]">
             <a href="{{ route('front.index') }}" class="flex">

@@ -1,9 +1,9 @@
 @extends('front.layouts.app')
-@section('title', 'Obito BuildWithAngga')
+@section('title', 'Dicky Adi Saputra - Frontend Developer')
 @section('content')
 <x-nav-guest />
-<main class="items-center py-[70px]">
-      <section class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+<main class="items-center py-[70px] min-h-screen">
+      <section class="max-w-6xl mt-20 mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             <!-- Left content -->
             <div>
                   <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -71,4 +71,5 @@
             </div>
       </section>
 </main>
+
 @endsection

@@ -1,9 +1,9 @@
 @extends('front.layouts.app')
-@section('title', 'Obito BuildWithAngga')
+@section('title', 'Dicky Adi Saputra - Frontend Developer')
 @section('content')
 <x-nav-guest />
 
-<section class="py-16 px-6 max-w-7xl mx-auto text-center">
+<section class="max-w-7xl mx-auto px-6 flex flex-col justify-center min-h-screen">
   <h2 class="text-3xl font-bold text-gray-900 mb-20">
     Para Ketua UKM UNUGIRI <br />
     BOJONEGORO

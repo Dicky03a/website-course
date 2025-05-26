@@ -1,10 +1,10 @@
 @extends('front.layouts.app')
-@section('title', 'Obito BuildWithAngga')
+@section('title', 'Dicky Adi Saputra - Frontend Developer')
 @section('content')
 <x-nav-guest />
 
-<main>
-      <section class="max-w-7xl mx-auto mt-20 px-6 py-16">
+<main class="min-h-screen">
+      <section class="max-w-7xl mx-auto px-6 flex flex-col justify-center min-h-screen">
             <h2 class="text-3xl font-bold text-gray-900 mb-10">
                   Prestasi Unggul ORMAWA <br />
                   UNUGIRI

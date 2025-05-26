@@ -1,8 +1,8 @@
 @extends('front.layouts.app')
-@section('title', 'Obito BuildWithAngga')
+@section('title', 'Dicky Adi Saputra - Frontend Developer')
 @section('content')
 <x-nav-guest />
-<main class="flex flex-1 items-center py-[70px]">
+<main class="flex flex-1 items-center min-h-screen">
     <div class="w-full flex justify-between items-center pl-[calc(((100%-1280px)/2)+75px)]">
         <div class="flex flex-col max-w-[500px] gap-[50px]">
             <div class="flex flex-col gap-[30px]">
@@ -78,4 +78,5 @@
         </section>
     </div>
 </main>
+<x-footer />
 @endsection

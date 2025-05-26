@@ -3,8 +3,8 @@
 
 @section('content')
 <x-nav-guest />
-<main class="flex mt-20 flex-col flex-1 justify-center">
-    <section id="pricing" class="flex flex-col items-center gap-[33px]">
+<main class="flex flex-col flex-1 justify-center">
+    <section class="max-w-7xl mx-auto px-6 flex flex-col justify-center min-h-screen">
         <div class="flex flex-col items-center gap-[10px] max-w-[500px] w-full">
             <p class="flex items-center gap-[6px] w-fit rounded-full py-2 px-[14px] bg-obito-light-green">
                 <img src="{{ asset('assets/images/icons/crown-green.svg') }}" class="flex shrink-0 w-5" alt="icon">
