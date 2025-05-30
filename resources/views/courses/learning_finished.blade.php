@@ -31,7 +31,7 @@
             <a href="#" class="border border-obito-grey rounded-full py-[10px] flex justify-center items-center hover:border-obito-green transition-all duration-300">
                 <span class="font-semibold">Get My Certificate</span>
             </a>
-            <a href="{{ route('dashboard') }}" class="text-white rounded-full py-[10px] flex justify-center items-center bg-obito-green hover:drop-shadow-effect transition-all duration-300">
+            <a href="{{ route('dashboard') }}" class="text-white rounded-full py-[10px] flex justify-center items-center bg-obito-green-500 hover:drop-shadow-effect transition-all duration-300">
                 <span class="font-semibold">Explore Courses</span>
             </a>
         </div>

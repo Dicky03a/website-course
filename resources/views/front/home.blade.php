@@ -4,9 +4,10 @@
 
 @section('content')
 
-@include('front.index')
-@include('front.about')
-@include('front.blog')
-@include('front.gallery')
+@includeIf('front.index')
+@includeIf('front.about')
+@includeIf('front.blog')
+@includeIf('front.prestasi')
 
+<x-footer />
 @endsection

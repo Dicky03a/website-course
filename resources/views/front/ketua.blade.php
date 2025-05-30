@@ -5,7 +5,7 @@
 
 <section class="max-w-7xl mx-auto px-6 flex flex-col justify-center min-h-screen">
   <h2 class="text-3xl font-bold text-gray-900 mb-20">
-    Para Ketua UKM UNUGIRI <br />
+    Ketua ORMAWA UNUGIRI <br />
     BOJONEGORO
   </h2>
 

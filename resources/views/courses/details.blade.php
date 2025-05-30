@@ -5,38 +5,17 @@
 <nav id="bottom-nav" class="flex w-full bg-white border-b border-obito-grey py-[14px]">
     <ul class="flex w-full max-w-[1280px] px-[75px] mx-auto gap-3">
         <li class="group">
-            <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
-                <img src="{{ asset('assets/images/icons/home-trend-up.svg') }}"" class=" flex shrink-0 w-5" alt="icon">
-                <span>Overview</span>
+            <a href="{{ route('front.index') }}"
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
+                <img src="{{ asset('assets/images/icons/home-trend-up.svg') }}" class="flex shrink-0 w-5" alt="icon">
+                <span>Home</span>
             </a>
         </li>
-        <li class="group">
+        <li class="group active">
             <a href="{{ route('dashboard') }}"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
-                <img src="{{ asset('assets/images/icons/note-favorite.svg') }}"" class=" flex shrink-0 w-5" alt="icon">
-                <span>Courses</span>
-            </a>
-        </li>
-        <li class="group">
-            <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
-                <img src="{{ asset('assets/images/icons/message-programming.svg') }}"" class=" flex shrink-0 w-5" alt="icon">
-                <span>Quizzess</span>
-            </a>
-        </li>
-        <li class="group">
-            <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
-                <img src="{{ asset('assets/images/icons/cup.svg') }}"" class=" flex shrink-0 w-5" alt="icon">
-                <span>Certificates</span>
-            </a>
-        </li>
-        <li class="group">
-            <a href="#"
-                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-light-green group-[.active]:border-obito-light-green">
-                <img src="{{ asset('assets/images/icons/ruler&pen.svg') }}"" class=" flex shrink-0 w-5" alt="icon">
-                <span>Portfolios</span>
+                class="flex items-center gap-2 rounded-full border border-obito-grey py-2 px-[14px] hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-green-500 group-[.active]:border-obito-light-green">
+                <img src="{{ asset('assets/images/icons/note-favorite.svg') }}" class="flex shrink-0 w-5" alt="icon">
+                <span class="text-white">Courses</span>
             </a>
         </li>
     </ul>
@@ -96,7 +75,7 @@
             </div>
             <div class="flex items-center gap-3">
                 <a href="{{ route('dashboard.course.join', $course->slug) }}"
-                    class="rounded-full py-[10px] px-5 gap-[10px] bg-obito-green hover:drop-shadow-effect transition-all duration-300">
+                    class="rounded-full py-[10px] px-5 gap-[10px] bg-obito-green-500 hover:drop-shadow-effect transition-all duration-300">
                     <span class="font-semibold text-white">Start Learning Now</span>
                 </a>
                 <a href="#"
@@ -113,31 +92,13 @@
                 <button type="button" class="tab-btn group active" data-target="about-content">
                     <p
                         class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-black">
-                        <span class="font-semibold group-[.active]:text-white">About</span>
+                        <span class="font-semibold group-[.active]:text-black">About</span>
                     </p>
                 </button>
                 <button type="button" class="tab-btn group" data-target="lessons-content">
                     <p
                         class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-black">
-                        <span class="font-semibold group-[.active]:text-white">Lessons</span>
-                    </p>
-                </button>
-                <button type="button" class="tab-btn group" data-target="testimonials-content">
-                    <p
-                        class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-black">
-                        <span class="font-semibold group-[.active]:text-white">Testimonials</span>
-                    </p>
-                </button>
-                <button type="button" class="tab-btn group" data-target="example">
-                    <p
-                        class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-black">
-                        <span class="font-semibold group-[.active]:text-white">Portfolios</span>
-                    </p>
-                </button>
-                <button type="button" class="tab-btn group" data-target="example">
-                    <p
-                        class="rounded-full border border-obito-grey py-2 px-4 hover:border-obito-green bg-white transition-all duration-300 group-[.active]:bg-obito-black">
-                        <span class="font-semibold group-[.active]:text-white">Rewards</span>
+                        <span class="font-semibold group-[.active]:text-black">Lessons</span>
                     </p>
                 </button>
             </div>
@@ -237,165 +198,6 @@
                     @endforeach
 
 
-                </div>
-                <div id="testimonials-content" class="tab-content grid grid-cols-2 w-full max-w-[860px] gap-5 hidden">
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/sami.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/4thPerson.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/anggaphoto.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/sami.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/5thPerson.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/anggaphoto.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="testimonial-card flex flex-col rounded-[20px] border border-obito-grey p-5 gap-4 bg-white">
-                        <div class="flex items-center">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                            <img src="{{ asset('assets/images/icons/Star 1.svg') }}"" class=" w-5 flex shrink-0" alt="icon">
-                        </div>
-                        <p class="leading-7">Asik banget belajar di sini dapat contoh kasus sesuai kebutuhan perusahaan
-                            saat ini proses adaptasi jadi lebih cepat dan produktif.</p>
-                        <div class="flex items-center gap-3">
-                            <div class="flex w-[50px] h-[50px] shrink-0 rounded-full overflow-hidden">
-                                <img src="{{ asset('assets/images/photos/3rdPerson.png') }}"" class=" w-full h-full object-cover"
-                                    alt="photo">
-                            </div>
-                            <div>
-                                <p class="font-semibold">Angga Risky</p>
-                                <p class="text-sm text-obito-text-secondary">Full Stack Developer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="example" class="tab-content hidden">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, sapiente?</p>
                 </div>
             </div>
         </div>

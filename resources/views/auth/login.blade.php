@@ -3,7 +3,7 @@
 
 @section('content')
 <x-nav-guest />
-<main class="relative flex flex-1 h-full">
+<main class="flex flex-1 min-h-screen">
     <section class="flex flex-1 items-center py-5 px-5 pl-[calc(((100%-1280px)/2)+75px)]">
         <form method="POST" action="{{ route('login') }}" class="flex flex-col h-fit w-[510px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-5 bg-white">
             @csrf
@@ -34,7 +34,7 @@
                 <a href="#" class="text-sm text-obito-green hover:underline">Forgot My Password</a>
             </div>
             <button type="submit"
-                class="flex items-center justify-center gap-[10px] rounded-full py-[14px] px-5 bg-obito-green hover:drop-shadow-effect transition-all duration-300">
+                class="flex items-center justify-center gap-[10px] rounded-full py-[14px] px-5 bg-obito-green-500 hover:drop-shadow-effect transition-all duration-300">
                 <span class="font-semibold text-white">Sign In to My Account</span>
             </button>
         </form>

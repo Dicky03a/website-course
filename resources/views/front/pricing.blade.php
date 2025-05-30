@@ -5,7 +5,7 @@
 <x-nav-guest />
 <main class="flex flex-col flex-1 justify-center">
     <section class="max-w-7xl mx-auto px-6 flex flex-col justify-center min-h-screen">
-        <div class="flex flex-col items-center gap-[10px] max-w-[500px] w-full">
+        <div class="flex flex-col items-center mb-10 gap-[10px] max-w-[500px] w-full">
             <p class="flex items-center gap-[6px] w-fit rounded-full py-2 px-[14px] bg-obito-light-green">
                 <img src="{{ asset('assets/images/icons/crown-green.svg') }}" class="flex shrink-0 w-5" alt="icon">
                 <span class="font-bold text-sm">UNLOCK PRO JOURNEY</span>
@@ -15,36 +15,10 @@
                 namun mentor tetap memberikan kualitas standard internasional</p>
         </div>
         <div class="flex items-center gap-5">
-            <!-- <div
-                class="price-card-reguler flex flex-col h-fit w-full max-w-[314px] shrink-0 rounded-[20px] p-5 border border-obito-grey gap-5 bg-white">
-                <div class="flex items-center gap-[14px]">
-                    <img src="{{ asset('assets/images/icons/award-black-fill.svg') }}" class="flex w-[60px] shrink-0" alt="icon">
-                    <h2 class="font-bold text-[22px] leading-[33px]">Beasiswa</h2>
-                </div>
-                <div class="price">
-                    <p class="font-bold text-[32px] leading-[48px]">Rp 0</p>
-                    <p class="mt-[6px] text-obito-text-secondary">3 months duration</p>
-                </div>
-                <hr class="border-obito-grey">
-                <div class="flex flex-col gap-4">
-                    <p class="flex items-center gap-2">
-                        <img src="{{ asset('assets/images/icons/tick-circle-green-fill.svg') }}" class="flex shrink-0" alt="icon">
-                        <span class="font-semibold">Materi</span>
-                    </p>
-                    <p class="flex items-center gap-2">
-                        <img src="{{ asset('assets/images/icons/tick-circle-green-fill.svg') }}" class="flex shrink-0" alt="icon">
-                        <span class="font-semibold">Get Premium Certifications</span>
-                    </p>
-                </div>
-                <hr class="border-obito-grey">
-                <a class="w-full h-11 rounded-full pt-[10px] px-5 gap-[10px] bg-obito-grey text-center">
-                    <span class="font-semibold text-obito-text-grey">Sold Out</span>
-                </a>
-            </div> -->
             @foreach($pricing_packages as $package)
             <div
                 class="price-card-popular flex flex-col h-fit w-full max-w-[314px] shrink-0 rounded-[20px] border-2 border-obito-green gap-5 bg-white overflow-hidden">
-                <p class="popular-badge text-center font-semibold text-white py-[6px] bg-obito-green">Most Popular
+                <p class="popular-badge text-center font-semibold text-white py-[6px] bg-obito-green-500">Most Popular
                     Package</p>
                 <div class="flex flex-col gap-5 p-5 pt-0">
                     <div class="flex items-center gap-[14px]">
@@ -73,12 +47,12 @@
                     <hr class="border-obito-grey">
                     @if ($user && $package->isSubscribedByUser($user->id))
                     <a href="#"
-                        class="w-full h-11 rounded-full py-[10px] px-5 gap-[10px] bg-obito-green text-center hover:drop-shadow-effect transition-all duration-300">
+                        class="w-full h-11 rounded-full py-[10px] px-5 gap-[10px] bg-obito-green-500 text-center hover:drop-shadow-effect transition-all duration-300">
                         <span class="font-semibold text-white">You've Subscribed</span>
                     </a>
                     @else
                     <a href="{{ route('front.checkout', $package) }}"
-                        class="w-full h-11 rounded-full py-[10px] px-5 gap-[10px] bg-obito-green text-center hover:drop-shadow-effect transition-all duration-300">
+                        class="w-full h-11 rounded-full py-[10px] px-5 gap-[10px] bg-obito-green-500 text-center hover:drop-shadow-effect transition-all duration-300">
                         <span class="font-semibold text-white">Get Pro</span>
                     </a>
                     @endif

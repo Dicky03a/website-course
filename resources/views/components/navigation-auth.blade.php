@@ -2,7 +2,7 @@
     <div class="flex w-[1280px] px-[75px] py-5 items-center justify-between mx-auto">
         <div class="flex items-center gap-[30px]">
             <a href="{{ route('front.index') }}" class="flex shrink-0">
-                <img src="{{ asset('assets/images/logos/logo.svg') }}" class="flex shrink-0" alt="logo">
+                <img src="{{ asset('assets/images/logos/logo-unugiri.png') }}" class="flex w-10 shrink-0" alt="logo">
             </a>
             <form method="GET" action="{{ route('dashboard.search.courses') }}" class="relative ">
                 <label class="group">
@@ -14,15 +14,6 @@
             </form>
         </div>
         <div class="flex items-center gap-5 justify-end">
-            <a href="#" class="flex shrink-0">
-                <img src="{{ asset('assets/images/icons/device-message.svg') }}" class="flex shrink-0" alt="icon">
-            </a>
-            <a href="catalog-v2.html" class="flex shrink-0">
-                <img src="{{ asset('assets/images/icons/category.svg') }}" class="flex shrink-0" alt="icon">
-            </a>
-            <a href="#" class="flex shrink-0">
-                <img src="{{ asset('assets/images/icons/notification.svg') }}" class="flex shrink-0" alt="icon">
-            </a>
             <div class="h-[50px] flex shrink-0 bg-obito-grey w-px"></div>
             <div id="profile-dropdown" class="relative flex items-center gap-[14px]">
                 <div class="flex shrink-0 w-[50px] h-[50px] rounded-full overflow-hidden bg-obito-grey">
@@ -47,19 +38,16 @@
                             <a href="{{ route('dashboard.subscriptions') }}">Subscriptions</a>
                         </li>
                         <li class="hover:text-obito-green transition-all duration-300">
-                            <a href="#">Settings</a>
-                        </li>
-                        <li class="hover:text-obito-green transition-all duration-300">
 
                             <!-- Authentication -->
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
 
                                 <a href="route('logout')"
-                                        onclick="event.preventDefault();
+                                    onclick="event.preventDefault();
                                                     this.closest('form').submit();">
                                     {{ __('Logout') }}
-                            </a>
+                                </a>
                             </form>
                         </li>
                     </ul>

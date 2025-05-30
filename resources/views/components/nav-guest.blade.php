@@ -2,7 +2,8 @@
     <div class="flex w-full py-5 items-center justify-between mx-auto" style="padding-left:70px; padding-right:70px;">
         <div class="flex items-center gap-[50px]">
             <a href="{{ route('front.index') }}" class="flex">
-                <img src="{{ asset('assets/images/logos/logo.svg') }}" class="flex shrink-0" alt="logo">
+                <img src="{{ asset('assets/images/logos/logo-unugiri.png') }}" class="flex w-10 shrink-0" alt="logo">
+                <h2 class="text-xl my-3 mx-3 font-bold">Giri Learn</h2>
             </a>
         </div>
         <ul class="flex items-center gap-10">
@@ -13,23 +14,23 @@
                 <a href="{{ route('front.about') }}">About</a>
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-                <a href="{{ route('front.prestasi') }}">Prestasi</a>
+                <a href="{{ route('front.ketua') }}">Ormawa</a>
             </li>
             <li class="{{request()->routeIs('front.pricing') ? ' font-semibold' : '' }} hover:font-semibold transition-all duration-300">
-                <a href="{{ route('front.pricing') }}">Pricing</a>
-            </li>
-            <li class="hover:font-semibold transition-all duration-300">
                 <a href="{{ route('front.blog') }}">Blog</a>
             </li>
             <li class="hover:font-semibold transition-all duration-300">
-                <a href="{{ route('front.ketua') }}">Ketua</a>
+                <a href="{{ route('front.pricing') }}">Start Here</a>
+            </li>
+            <li class="hover:font-semibold transition-all duration-300">
+                <a href="{{ route('front.prestasi') }}">Prestasi</a>
             </li>
         </ul>
         <div class="flex items-center gap-5 justify-end">
             <div class="h-[50px] flex shrink-0 bg-obito-green-500 w-px"></div>
             <div class="flex items-center gap-3">
                 <a href="{{ route('register') }}" class="rounded-full border border-obito-grey py-3 px-5 gap-[10px] bg-white hover:border-obito-green-500 transition-all duration-300">
-                    <span class="font-semibold">Sign Up</span>
+                    <span class="font-semibold">Registrasi</span>
                 </a>
                 <a href="{{ route('login') }}" class="rounded-full py-3 px-5 gap-[10px] bg-obito-green-500 hover:drop-shadow-effect transition-all duration-300">
                     <span class="font-semibold text-white">My Account</span>

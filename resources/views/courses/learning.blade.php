@@ -35,7 +35,7 @@
                         <ul class="flex flex-col gap-4">
                             @foreach($section->sectionContents as $content)
                             <li class="group {{ $currentSection && $section->id == $currentSection->id && $currentContent->id == $content->id ? 'active' : '' }}">
-                                    <a href="{{ route('dashboard.course.learning', [
+                                <a href="{{ route('dashboard.course.learning', [
                                         'course' => $course->slug,
                                         'courseSection' => $section->id,
                                         'sectionContent' => $content->id,
@@ -78,11 +78,11 @@
                                     'course' => $course->slug,
                                     'courseSection' => $nextContent->course_section_id,
                                     'sectionContent' => $nextContent->id,
-                                ]) }}" class="rounded-full border bg-obito-green text-white px-5 py-[10px] hover:drop-shadow-effect transition-all duration-300">
+                                ]) }}" class="rounded-full border bg-obito-green-500 text-white px-5 py-[10px] hover:drop-shadow-effect transition-all duration-300">
                             <span class="font-semibold">Next Lesson</span>
                         </a>
                         @else
-                        <a href="{{ route('dashboard.course.learning.finished', $course->slug) }}" class="rounded-full border bg-obito-green text-white px-5 py-[10px] hover:drop-shadow-effect transition-all duration-300">
+                        <a href="{{ route('dashboard.course.learning.finished', $course->slug) }}" class="rounded-full border bg-obito-green-500 text-white px-5 py-[10px] hover:drop-shadow-effect transition-all duration-300">
                             <span class="font-semibold">Finish Learning</span>
                         </a>
                         @endif
@@ -97,8 +97,8 @@
 @endsection
 
 @push('after-styles')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
-    <link rel="stylesheet" href="{{ asset('css/content.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+<link rel="stylesheet" href="{{ asset('css/content.css') }}">
 @endpush
 
 @push('after-scripts')
@@ -106,22 +106,22 @@
 <script src="{{ asset('js/accordion.js') }}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            document.querySelectorAll('pre').forEach(pre => {
-                // Add the class 'tokyo-night' to each <pre> element
-                pre.classList.add('theme-tokyo-night-dark');
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('pre').forEach(pre => {
+            // Add the class 'tokyo-night' to each <pre> element
+            pre.classList.add('theme-tokyo-night-dark');
 
-                if (!pre.querySelector('code')) {
-                    // Wrap content in <code>
-                    const code = document.createElement('code');
-                    code.className = ''; // Leave empty for autodetection or add 'plaintext' for default
-                    code.textContent = pre.textContent.trim(); // Decode and clean up content
-                    pre.innerHTML = ''; // Clear existing content
-                    pre.appendChild(code); // Append <code> inside <pre>
-                }
-            });
-            hljs.highlightAll(); // Apply Highlight.js
+            if (!pre.querySelector('code')) {
+                // Wrap content in <code>
+                const code = document.createElement('code');
+                code.className = ''; // Leave empty for autodetection or add 'plaintext' for default
+                code.textContent = pre.textContent.trim(); // Decode and clean up content
+                pre.innerHTML = ''; // Clear existing content
+                pre.appendChild(code); // Append <code> inside <pre>
+            }
         });
-    </script>
+        hljs.highlightAll(); // Apply Highlight.js
+    });
+</script>
 @endpush

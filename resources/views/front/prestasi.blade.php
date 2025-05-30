@@ -14,7 +14,7 @@
                   <!-- Card 1 -->
                   <div class="relative rounded-xl overflow-hidden shadow">
                         <img
-                              src="https://source.unsplash.com/400x300/?house"
+                              src="{{ asset('assets/images/photos/juara.JPG') }}"
                               alt="New York"
                               class="w-full h-48 object-cover" />
                         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
@@ -26,7 +26,7 @@
                   <!-- Card 2 -->
                   <div class="relative rounded-xl overflow-hidden shadow">
                         <img
-                              src="https://source.unsplash.com/400x300/?city,buildings"
+                              src="{{ asset('assets/images/photos/juara.JPG') }}"
                               alt="Houston"
                               class="w-full h-48 object-cover" />
                         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
@@ -38,7 +38,7 @@
                   <!-- Card 3 -->
                   <div class="relative rounded-xl overflow-hidden shadow">
                         <img
-                              src="https://source.unsplash.com/400x300/?luxury,pool"
+                              src="{{ asset('assets/images/photos/juara.JPG') }}"
                               alt="San Diego"
                               class="w-full h-48 object-cover" />
                         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
@@ -50,7 +50,7 @@
                   <!-- Card 4 -->
                   <div class="relative rounded-xl overflow-hidden shadow">
                         <img
-                              src="https://source.unsplash.com/400x300/?skyscraper"
+                              src="{{ asset('assets/images/photos/juara.JPG') }}"
                               alt="Philadelphia"
                               class="w-full h-48 object-cover" />
                         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
@@ -62,7 +62,7 @@
                   <!-- Card 5 -->
                   <div class="relative rounded-xl overflow-hidden shadow">
                         <img
-                              src="https://source.unsplash.com/400x300/?modern,house"
+                              src="{{ asset('assets/images/photos/juara.JPG') }}"
                               alt="San Francisco"
                               class="w-full h-48 object-cover" />
                         <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end p-4 text-white">
