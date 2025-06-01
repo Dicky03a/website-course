@@ -8,10 +8,10 @@
             <div class="flex flex-col gap-[30px]">
                 <div>
                     <h1 class="font-extrabold text-[50px] leading-[65px]">Tingkatkan Skills, <br>Get Higher Salary</h1>
-                    <p class="leading-7 mt-[10px] text-obito-text-secondary">Asah skills dengan pembelajaran interaktif yang fleksible, efisien, dan mudah diakses sebagai penunjang mutu organisasimu*</p>
+                    <p class="leading-7 mt-[10px] text-obito-text-secondary">Asah skills dengan pembelajaran interaktif yang fleksible, efisien, dan mudah diakses sebagai penunjang mutu organisasimu</p>
                 </div>
                 <div class="flex items-center gap-[18px]">
-                    <a href="{{ route('register') }}" class="flex items-center rounded-full h-[67px] py-5 px-[30px] gap-[10px] bg-obito-green-500 hover:drop-shadow-effect transition-all duration-300">
+                    <a href="{{ route('login') }}" class="flex items-center rounded-full h-[67px] py-5 px-[30px] gap-[10px] bg-obito-green-500 hover:drop-shadow-effect transition-all duration-300">
                         <span class="text-white font-semibold text-lg">Get Started</span>
                     </a>
                     <a href="#" indexclass="flex items-center rounded-full h-[67px] border border-obito-grey py-5 px-[30px] bg-white gap-[10px] hover:border-obito-green-500 transition-all duration-300">
@@ -24,7 +24,9 @@
         <section class="flex flex-1 items-center py-5 px-5 pl-[calc(((100%-1280px)/2)+75px)]">
             <form method="POST" action="{{ route('login') }}" class="flex flex-col h-fit w-[510px] shrink-0 rounded-[20px] border border-obito-grey px-5 gap-5 bg-white" style="padding-bottom: 50px; padding-top: 50px;">
                 @csrf
-                <h1 class="font-bold items-center text-[22px] leading-[33px] mb-5">Welcome Back, <br>Let’s Upgrade Skills</h1>
+                <h1 class="font-bold items-center text-[22px] leading-[33px] mb-5">Welcome back, Team!
+                    <br> Let's Grow and develop learning
+                </h1>
                 <div class="flex flex-col gap-2">
                     <p>Email Address</p>
                     <label class="relative group">

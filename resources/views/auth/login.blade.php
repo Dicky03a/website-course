@@ -7,7 +7,9 @@
     <section class="flex flex-1 items-center py-5 px-5 pl-[calc(((100%-1280px)/2)+75px)]">
         <form method="POST" action="{{ route('login') }}" class="flex flex-col h-fit w-[510px] shrink-0 rounded-[20px] border border-obito-grey p-5 gap-5 bg-white">
             @csrf
-            <h1 class="font-bold text-[22px] leading-[33px] mb-5">Welcome Back, <br>Let’s Upgrade Skills</h1>
+            <h1 class="font-bold text-[22px] leading-[33px] mb-5">Welcome back, Team!
+                <br> Let's Grow and develop learning
+            </h1>
             <div class="flex flex-col gap-2">
                 <p>Email Address</p>
                 <label class="relative group">
